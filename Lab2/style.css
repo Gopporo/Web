@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'LionKingFont';
+    src: url('fonts/LionKingFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TreasurePlanetFont';
+    src: url('fonts/TreasurePlanetFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AvatarFont';
+    src: url('fonts/AvatarFont.ttf') format('truetype');
+}
+
+/* Общий стиль для фона и контейнера */
+body {
+    background-color: #f6dc59; /* Выбранный цвет фона */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto; /* Центрирование контента */
+    background-color: #fbe779;
+    padding: 20px;
+}
+
+/* Стили для списка фильмов */
+ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+
+ul li a {
+    color: black; /* Черный цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Стили для фильмов */
+#lion-king {
+    font-family: 'LionKingFont'; /* Шрифт для "Король Лев" */
+    text-align: center; /* Текст по центру */
+    src: url('fonts/LionKingFont.ttf') format('truetype');
+}
+
+#treasure-planet {
+    font-family: 'TreasurePlanetFont'; /* Шрифт для "Планета Сокровищ" */
+    text-align: justify; /* Текст по ширине */
+    src: url('fonts/TreasurePlanetFont.ttf') format('truetype');
+}
+
+#avatar-aang {
+    font-family: 'AvatarFont'; /* Шрифт для "Аватар: Легенда об Аанге" */
+    text-align: left; /* Текст по левому краю */
+    src: url('fonts/AvatarFont.ttf') format('truetype');
+}
+
+/* Стили для изображений */
+.images-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.images-row img {
+    border-radius: 15px; /* Закругленные края картинок */
+    width: 30%;
+}
+
+/* Жирный текст */
+b {
+    font-weight: bold; /* Используем тег <b> для жирного начертания */
+}
+
+strong {
+    font-weight: 700; /* Используем тег <strong> для жирного начертания */
+}
+
+.bold-css {
+    font-weight: 600; /* Используем CSS-свойство для жирного начертания */
+}
+
