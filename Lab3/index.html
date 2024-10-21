@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета для друзей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="/submit_form" method="POST">
+    <fieldset>
+        <legend>Личная информация</legend>
+
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Предпочтения</legend>
+
+        <label for="music">Любимая музыкальная группа или певец:</label>
+        <input type="text" id="music" name="music">
+
+        <label for="color">Любимый цвет:</label>
+        <input type="text" id="color" name="color">
+
+        <label for="city">Любимый город:</label>
+        <input type="text" id="city" name="city">
+
+        <label for="drink">Любимый напиток:</label>
+        <input type="text" id="drink" name="drink">
+
+        <label>Кто твой лучший друг?</label>
+        <input type="radio" id="friend-liza" name="best_friend" value="Лиза">
+        <label for="friend-liza">Лиза</label><br>
+        <input type="radio" id="friend-alisa" name="best_friend" value="Алиса">
+        <label for="friend-alisa">Алиса</label><br>
+        <input type="radio" id="friend-sasha" name="best_friend" value="Саша">
+        <label for="friend-sasha">Саша</label><br>
+        <input type="radio" id="friend-juliana" name="best_friend" value="Юлиана">
+        <label for="friend-juliana">Юлиана</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Образование</legend>
+
+        <label for="university">В каком университете ты учишься?</label>
+        <input type="radio" id="bsuir" name="university" value="БГУИР">
+        <label for="bsuir">БГУИР</label><br>
+        <input type="radio" id="bntu" name="university" value="БНТУ">
+        <label for="bntu">БНТУ</label><br>
+        <input type="radio" id="bsu" name="university" value="БГУ">
+        <label for="bsu">БГУ</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Интересы</legend>
+
+        <label>Кто тебе нравится?????</label>
+        <input type="password" id="like" name="like">
+
+        <label>Твои хобби (можно выбрать несколько):</label>
+        <input type="checkbox" id="hobby-reading" name="hobbies" value="Чтение">
+        <label for="hobby-reading">Чтение</label><br>
+        <input type="checkbox" id="hobby-sport" name="hobbies" value="Спорт">
+        <label for="hobby-sport">Спорт</label><br>
+        <input type="checkbox" id="hobby-music" name="hobbies" value="Музыка">
+        <label for="hobby-music">Музыка</label><br>
+        <input type="checkbox" id="hobby-travel" name="hobbies" value="Путешествия">
+        <label for="hobby-travel">Путешествия</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Сочинение</legend>
+
+        <label for="essay">Как ты провел лето? (ниже прикрепи файл):</label>
+        <input type="file" id="essay" name="essay">
+    </fieldset>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Сбросить">
+</form>
+
+</body>
+</html>

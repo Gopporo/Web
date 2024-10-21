@@ -13,51 +13,47 @@
     src: url('fonts/AvatarFont.ttf') format('truetype');
 }
 
-/* Общий стиль для фона и контейнера */
 body {
-    background-color: #f6dc59; /* Выбранный цвет фона */
+    background-color: #f6dc59; 
     margin: 0;
     padding: 0;
 }
 
 .container {
     width: 1440px;
-    margin: 0 auto; /* Центрирование контента */
+    margin: 0 auto;
     background-color: #fbe779;
     padding: 20px;
 }
 
-/* Стили для списка фильмов */
 ul {
-    list-style: none; /* Убираем маркеры списка */
+    list-style: none; 
     padding: 0;
 }
 
 ul li a {
-    color: black; /* Черный цвет ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
+    color: black; 
+    text-decoration: none; 
 }
 
-/* Стили для фильмов */
 #lion-king {
-    font-family: 'LionKingFont'; /* Шрифт для "Король Лев" */
-    text-align: center; /* Текст по центру */
+    font-family: 'LionKingFont'; 
+    text-align: center; 
     src: url('fonts/LionKingFont.ttf') format('truetype');
 }
 
 #treasure-planet {
-    font-family: 'TreasurePlanetFont'; /* Шрифт для "Планета Сокровищ" */
-    text-align: justify; /* Текст по ширине */
+    font-family: 'TreasurePlanetFont'; 
+    text-align: justify;
     src: url('fonts/TreasurePlanetFont.ttf') format('truetype');
 }
 
 #avatar-aang {
-    font-family: 'AvatarFont'; /* Шрифт для "Аватар: Легенда об Аанге" */
-    text-align: left; /* Текст по левому краю */
+    font-family: 'AvatarFont'; 
+    text-align: left; 
     src: url('fonts/AvatarFont.ttf') format('truetype');
 }
 
-/* Стили для изображений */
 .images-row {
     display: flex;
     justify-content: space-between;
@@ -65,20 +61,19 @@ ul li a {
 }
 
 .images-row img {
-    border-radius: 15px; /* Закругленные края картинок */
+    border-radius: 15px; 
     width: 30%;
 }
 
-/* Жирный текст */
 b {
-    font-weight: bold; /* Используем тег <b> для жирного начертания */
+    font-weight: bold; 
 }
 
 strong {
-    font-weight: 700; /* Используем тег <strong> для жирного начертания */
+    font-weight: 700; 
 }
 
 .bold-css {
-    font-weight: 600; /* Используем CSS-свойство для жирного начертания */
+    font-weight: 600; 
 }
 
