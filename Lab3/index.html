@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<form action="/submit_form" method="POST">
+<form action="/submit_фform" method="POST">
     <fieldset>
         <legend>Личная информация</legend>
 
-        <label for="name">ФИО:</label>
+        <label for="name">Имя:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="address">Адрес:</label>
@@ -26,10 +26,10 @@
         <legend>Контактная информация</legend>
 
         <label for="phone">Номер телефона:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+        <input type="tel" id="phone" name="phone" placeholder="375-12-345-67-89" pattern="375-\d{2}-\d{3}-\d{2}-\d{2}" title="Введите номер телефона в формате 375-12-345-67-89" required>
 
         <label for="email">Электронная почта:</label>
-        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+        <input type="email" id="email" name="email" placeholder="post@gmail.com" required>
     </fieldset>
 
     <fieldset>
@@ -46,7 +46,6 @@
 
         <label for="drink">Любимый напиток:</label>
         <input type="text" id="drink" name="drink">
-
         <label>Кто твой лучший друг?</label>
         <input type="radio" id="friend-liza" name="best_friend" value="Лиза">
         <label for="friend-liza">Лиза</label><br>
@@ -60,7 +59,7 @@
 
     <fieldset>
         <legend>Образование</legend>
-
+        
         <label for="university">В каком университете ты учишься?</label>
         <input type="radio" id="bsuir" name="university" value="БГУИР">
         <label for="bsuir">БГУИР</label><br>
@@ -90,7 +89,7 @@
     <fieldset>
         <legend>Сочинение</legend>
 
-        <label for="essay">Как ты провел лето? (ниже прикрепи файл):</label>
+        <label for="essay">Как ты провёл лето? (ниже прикрепи файл):</label>
         <input type="file" id="essay" name="essay">
     </fieldset>
 
