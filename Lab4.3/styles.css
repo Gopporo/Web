@@ -19,7 +19,7 @@ body, html {
     background-color: #069106;
     border-radius: 50%;
     position: relative;
-    animation: bounce 4s ease-in infinite; 
+    animation: bounce 4s ease-in forwards; 
 }
 
 @keyframes bounce {
