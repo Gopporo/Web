@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный Киноархив</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ваши просмотренные фильмы</h1>
+    <div id="movies"></div>
+
+    <script>
+        let numberOfFilms;
+        do {
+            numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+        } while (numberOfFilms === null || numberOfFilms.trim() === '' || isNaN(numberOfFilms));
+
+        const personalMovieDB = {
+            count: +numberOfFilms,
+            movies: {}
+        };
+
+        for (let i = 0; i < 2; i++) {
+            let lastMovie, movieRating;
+            do {
+                lastMovie = prompt('Один из последних просмотренных фильмов?', '');
+            } while (!lastMovie || lastMovie.trim() === '' || lastMovie.length > 50);
+            do {
+                movieRating = prompt('На сколько оцените его?', '');
+            } while (!movieRating || movieRating.trim() === '' || isNaN(movieRating));
+            personalMovieDB.movies[lastMovie] = movieRating;
+        }
+
+        function displayMovies() {
+            const moviesContainer = document.getElementById('movies');
+            const table = document.createElement('table');
+            const headerRow = document.createElement('tr');
+            headerRow.innerHTML = '<th>Фильм</th><th>Оценка</th>';
+            table.appendChild(headerRow);
+
+            for (const movie in personalMovieDB.movies) {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${movie}</td><td>${personalMovieDB.movies[movie]}</td>`;
+                table.appendChild(row);
+            }
+            moviesContainer.appendChild(table);
+        }
+
+        displayMovies();
+    </script>
+</body>
+</html>
