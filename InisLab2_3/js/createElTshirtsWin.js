@@ -74,7 +74,6 @@ export function createElements() {
     });
     bigShirtsCard.append(bigImg);
 
-    // Обновление изображения
     function updateImage() {
         const colorSet = selectedShirt.colors?.[currentColor] || selectedShirt.default;
         bigImg.src = `../${colorSet[currentSide]}`;
@@ -112,6 +111,5 @@ export function createElements() {
         bigColor.append(btnColor);
     }
 
-    // Стартовое изображение
     updateImage();
 }

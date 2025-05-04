@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const targetElements = document.querySelectorAll('.target');
     
-    let isDragging = false; // престаскивание
-    let isSticky = false; // прилипание 
-    let selectedElement = null; // выбранный элемент
-    let originalPositions = new Map(); // исходные позиции
-    let offsetX = 0; // смещение курсора от верхнего левого угла блока
+    let isDragging = false; 
+    let isSticky = false;  
+    let selectedElement = null; 
+    let originalPositions = new Map(); 
+    let offsetX = 0; 
     let offsetY = 0;
   
     targetElements.forEach(element => {

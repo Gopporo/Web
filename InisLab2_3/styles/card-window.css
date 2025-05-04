@@ -6,7 +6,6 @@
 .big-shirts-card {
     display: flex;
     align-items: flex-start;
-    /* flex-wrap: wrap; */
     gap: 10px;
     margin-top: 20px;
 }
